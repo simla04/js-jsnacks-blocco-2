@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        //  NOTE - *Snack2*
+        //  Generatore di “nomi cognomi” casuali del grande gatsby:
+        //  Abbiamo una lista di nomi e una lista di cognomi, e da queste vogliamo generare una "falsa" lista di invitati, dove ogni invitato nella lista, è l'unione di un "nome" e un "cognome" delle liste precedentemente dette, scelti in modo casuale.
+
+        const names = ['Michela', 'Fabio', 'Roberto'];
+        const surnames = ['Forghieri', 'Pagani', 'Marazzini'];
+
+        const fullNames = [];
+
+        //trovare un nome randomico dall'array1
+        let nameRandom = Math.floor(Math.random() * names.length);
+        let surnameRandom = Math.floor(Math.random() * surnames.length);
+
+        // estarre un dato da un array
+        //  nomeArray[posizioneElemento] => nomeArray[2] => estrarre il dato dall'array in posizione 2; ricordarsi che le posizioni degli indici di un array partono da 0 => const arrayEsempio = [ '0', '1', '2']
+
+        console.log( ` il dato composto randomico è : ${names[nameRandom]} ${surnames[surnameRandom]}`);
+
+
+
+    </script>
+
+
+
+    <!-- <script src="..." type="text/javascript"></script> 
+    come collegare il file javascript  all'html dall'esterno-->
+
+    <!-- link bootstrap/javascript alla fine del body -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+</body>
+</html>
