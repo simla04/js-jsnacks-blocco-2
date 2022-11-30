@@ -11,12 +11,7 @@
 <body>
 
 
-
-
-
-
-
-
+<span id="datoComposto"></span>
 
     <script type="text/javascript">
         //  NOTE - *Snack2*
@@ -35,9 +30,9 @@
         // estarre un dato da un array
         //  nomeArray[posizioneElemento] => nomeArray[2] => estrarre il dato dall'array in posizione 2; ricordarsi che le posizioni degli indici di un array partono da 0 => const arrayEsempio = [ '0', '1', '2']
 
-        console.log( ` il dato composto randomico è : ${names[nameRandom]} ${surnames[surnameRandom]}`);
+        console.log( `il dato composto randomico è : ${names[nameRandom]} ${surnames[surnameRandom]}`);
 
-
+        document.getElementById('datoComposto').innerText = `Il dato composto randomico è : ${names[nameRandom]} ${surnames[surnameRandom]}`;
 
     </script>
 
