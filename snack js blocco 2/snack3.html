@@ -10,23 +10,27 @@
 </head>
 <body>
 
-
-
-
-
-
-
-
-
     <script type="text/javascript">
         //  NOTE - *Snack3*
         //     Crea un array di numeri interi e fai la somma di tutti gli elementi  che sono in posizione (indice) dispari
 
+        let numeriInteri = [5,9,7,90,56,3,2,78,2,34,56];
+
+        // variabile che parte da 0 e che verrà modificata nel ciclo
+        let sum = 0;
+
+        // ciclo for= ciclare e interrogare la posizione(indice) dei numeri interi in posizione dispari
+        for( let i = 0; i < numeriInteri.length; i++){
+            // posizione dispari diverso-> !==
+            if( i % 2 !== 0 ){
+                sum = sum + numeriInteri[i];
+            }
+        }
+        console.log(sum)
+        
+    
 
     </script>
-
-
-
     <!-- <script src="..." type="text/javascript"></script> 
     come collegare il file javascript  all'html dall'esterno-->
 
