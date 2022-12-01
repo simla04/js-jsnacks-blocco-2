@@ -11,13 +11,6 @@
 <body>
 
 
-
-
-
-
-
-
-
     <script type="text/javascript">
         //  NOTE - *Snack4 (Bonus)*
         //     Crea due array che hanno un numero di elementi diversi.  Aggiungi elementi all’array che ha meno elementi fino a quando ne avrà tanti quanti l’altro.
@@ -28,6 +21,39 @@
         //     4. torniamo a scrivere in italiano
         //     5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo “a mano”
         //     Buon lavoro e buon divertimento! :faccia_leggermente_sorridente:
+
+        let array1 = [5,9,2,4];
+        let array2 = [80];
+
+        // variabilli di controllo
+        let arrayMaggiore;
+        let arrayMinore;
+
+        // array con meno elementi
+        if( array1.length > array2.length) {
+            // array1 è composto da più elementi di array2
+            arrayMaggiore = array1;
+            arrayMinore = array2;
+            console.log(arrayMaggiore)
+        } else if( array1.length == array2.length){
+            console.log('gli harray hanno lo steso numero di dati, hanno la stessa lunghezza')
+        } else{
+            arrayMaggiore = array2;
+            arrayMinore = array1;
+            // console.log('arrayMinore')
+        }
+        // quanti elementi mancano all'arrayMinore per rendere uguale raggiungere arrayMinore
+        let differenzaLunghezzaArray = arrayMaggiore.length -arrayMinore.length;
+
+        for ( let i = 0; i < differenzaLunghezzaArray; i++ ){
+
+            let numeroRandom = Math.floor(Math.random() * 100);
+            console.log(`numero ciclo: ${i} e il numero random è: ${numeroRandom}`)
+
+            arrayMinore.push( numeroRandom );
+        }
+        
+        console.log (arrayMinore );
 
     </script>
 
